@@ -5,21 +5,21 @@
 class NomadPortForward < Formula
   desc "Forward ports from a Nomad job to a local machine"
   homepage "https://github.com/Mongey/nomad-port-forward"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.2.0/nomad-port-forward_Darwin_x86_64.tar.gz"
-      sha256 "5e03e79fcb6d2f05469191d0318481adb9ead7cf11413c721765e50e832502dc"
+      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.3.0/nomad-port-forward_Darwin_x86_64.tar.gz"
+      sha256 "3c90c8d621d67d2e7599c2e91f3f2606a3999c38ffafde962d900618b8c51199"
 
       def install
         bin.install "nomad-port-forward"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.2.0/nomad-port-forward_Darwin_arm64.tar.gz"
-      sha256 "d933aa676f9a4426a83eb551e8ec7ee00ac99225633c5e5102362210859baf80"
+      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.3.0/nomad-port-forward_Darwin_arm64.tar.gz"
+      sha256 "74b7903acd6986fcc447d6e21546408e4038214a5e367cd0241a55ff0bfb3780"
 
       def install
         bin.install "nomad-port-forward"
@@ -29,15 +29,15 @@ class NomadPortForward < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.2.0/nomad-port-forward_Linux_x86_64.tar.gz"
-      sha256 "18baf2b62b1886e6a8a624110e39b9c8703583b02168892487c3a1efd94f1314"
+      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.3.0/nomad-port-forward_Linux_x86_64.tar.gz"
+      sha256 "41bf42fcfe1880c078db81519dd12102e120e2eab050282b5e52cade90d28f18"
       def install
         bin.install "nomad-port-forward"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.2.0/nomad-port-forward_Linux_arm64.tar.gz"
-      sha256 "3b16ef5a1bdc3e07a7c66ea22619a33fe1d2f8076ee0334cadd3acf7607e464e"
+      url "https://github.com/Mongey/nomad-port-forward/releases/download/v0.3.0/nomad-port-forward_Linux_arm64.tar.gz"
+      sha256 "8d2f7826657bcd38dcc95e86c4c43a75fc9209d5745de028ac5c053df8f7a700"
       def install
         bin.install "nomad-port-forward"
       end
